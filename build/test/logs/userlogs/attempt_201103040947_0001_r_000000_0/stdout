@@ -1,0 +1,35 @@
+2011-03-04 09:47:16,652 WARN  conf.Configuration (Configuration.java:loadResource(1055)) - /home/liangly/Yunti1/trunk/hadoop-newapi/build/test/mapred/local/1_0/taskTracker/jobcache/job_201103040947_0001/attempt_201103040947_0001_r_000000_0/job.xml:a attempt to override final parameter: hadoop.tmp.dir;  Ignoring.
+2011-03-04 09:47:16,748 INFO  jvm.JvmMetrics (JvmMetrics.java:init(71)) - Initializing JVM Metrics with processName=SHUFFLE, sessionId=
+2011-03-04 09:47:16,850 INFO  mapred.ReduceTask (ReduceTask.java:<init>(986)) - ShuffleRamManager: MemoryLimit=130514944, MaxSingleShuffleLimit=32628736
+2011-03-04 09:47:16,856 INFO  mapred.ReduceTask (ReduceTask.java:run(2371)) - attempt_201103040947_0001_r_000000_0 Thread started: Thread for merging on-disk files
+2011-03-04 09:47:16,856 INFO  mapred.ReduceTask (ReduceTask.java:run(2376)) - attempt_201103040947_0001_r_000000_0 Thread waiting: Thread for merging on-disk files
+2011-03-04 09:47:16,857 INFO  mapred.ReduceTask (ReduceTask.java:run(2469)) - attempt_201103040947_0001_r_000000_0 Thread started: Thread for merging in memory files
+2011-03-04 09:47:16,857 INFO  mapred.ReduceTask (ReduceTask.java:fetchOutputs(1817)) - attempt_201103040947_0001_r_000000_0 Need another 2 map output(s) where 0 is already in progress
+2011-03-04 09:47:16,857 INFO  mapred.ReduceTask (ReduceTask.java:run(2570)) - attempt_201103040947_0001_r_000000_0 Thread started: Thread for polling Map Completion Events
+2011-03-04 09:47:16,901 INFO  mapred.ReduceTask (ReduceTask.java:fetchOutputs(1931)) - attempt_201103040947_0001_r_000000_0 Scheduled 0 outputs (0 slow hosts and0 dup hosts)
+2011-03-04 09:47:16,936 INFO  mapred.ReduceTask (ReduceTask.java:run(2576)) - attempt_201103040947_0001_r_000000_0: Got 1 new map-outputs
+2011-03-04 09:47:19,946 INFO  mapred.ReduceTask (ReduceTask.java:run(2576)) - attempt_201103040947_0001_r_000000_0: Got 1 new map-outputs
+2011-03-04 09:47:21,903 INFO  mapred.ReduceTask (ReduceTask.java:fetchOutputs(1931)) - attempt_201103040947_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2011-03-04 09:47:22,270 INFO  mapred.ReduceTask (ReduceTask.java:getMapOutput(1378)) - Shuffling 73 bytes (77 raw bytes) into RAM from attempt_201103040947_0001_m_000000_0
+2011-03-04 09:47:22,272 INFO  mapred.ReduceTask (ReduceTask.java:shuffleInMemory(1500)) - Read 73 bytes from map-output for attempt_201103040947_0001_m_000000_0
+2011-03-04 09:47:22,272 INFO  mapred.ReduceTask (ReduceTask.java:shuffleInMemory(1558)) - Rec #1 from attempt_201103040947_0001_m_000000_0 -> (2, 4) from localhost
+2011-03-04 09:47:22,284 INFO  mapred.ReduceTask (ReduceTask.java:fetchOutputs(1931)) - attempt_201103040947_0001_r_000000_0 Scheduled 1 outputs (0 slow hosts and0 dup hosts)
+2011-03-04 09:47:22,287 INFO  mapred.ReduceTask (ReduceTask.java:getMapOutput(1378)) - Shuffling 24 bytes (28 raw bytes) into RAM from attempt_201103040947_0001_m_000001_0
+2011-03-04 09:47:22,287 INFO  mapred.ReduceTask (ReduceTask.java:shuffleInMemory(1500)) - Read 24 bytes from map-output for attempt_201103040947_0001_m_000001_0
+2011-03-04 09:47:22,288 INFO  mapred.ReduceTask (ReduceTask.java:shuffleInMemory(1558)) - Rec #1 from attempt_201103040947_0001_m_000001_0 -> (5, 4) from localhost
+2011-03-04 09:47:22,966 INFO  mapred.ReduceTask (ReduceTask.java:run(2594)) - GetMapEventsThread exiting
+2011-03-04 09:47:22,967 INFO  mapred.ReduceTask (ReduceTask.java:fetchOutputs(2103)) - getMapsEventsThread joined.
+2011-03-04 09:47:22,967 INFO  mapred.ReduceTask (ReduceTask.java:close(1088)) - Closed ram manager
+2011-03-04 09:47:22,967 INFO  mapred.ReduceTask (ReduceTask.java:fetchOutputs(2131)) - Interleaved on-disk merge complete: 0 files left.
+2011-03-04 09:47:22,967 INFO  mapred.ReduceTask (ReduceTask.java:fetchOutputs(2136)) - In-memory merge complete: 2 files left.
+2011-03-04 09:47:22,999 INFO  mapred.Merger (Merger.java:merge(332)) - Merging 2 sorted segments
+2011-03-04 09:47:22,999 INFO  mapred.Merger (Merger.java:merge(415)) - Down to the last merge-pass, with 2 segments left of total size: 97 bytes
+2011-03-04 09:47:23,036 INFO  mapred.ReduceTask (ReduceTask.java:createKVIterator(2237)) - Merged 2 segments, 97 bytes to disk to satisfy reduce memory limit
+2011-03-04 09:47:23,037 INFO  mapred.ReduceTask (ReduceTask.java:createKVIterator(2257)) - Merging 1 files, 99 bytes from disk
+2011-03-04 09:47:23,038 INFO  mapred.ReduceTask (ReduceTask.java:createKVIterator(2271)) - Merging 0 segments, 0 bytes from memory into reduce
+2011-03-04 09:47:23,038 INFO  mapred.Merger (Merger.java:merge(332)) - Merging 1 sorted segments
+2011-03-04 09:47:23,041 INFO  mapred.Merger (Merger.java:merge(415)) - Down to the last merge-pass, with 1 segments left of total size: 95 bytes
+2011-03-04 09:47:23,088 INFO  mapred.TaskRunner (Task.java:done(668)) - Task:attempt_201103040947_0001_r_000000_0 is done. And is in the process of commiting
+2011-03-04 09:47:25,099 INFO  mapred.TaskRunner (Task.java:commit(794)) - Task attempt_201103040947_0001_r_000000_0 is allowed to commit now
+2011-03-04 09:47:25,112 INFO  output.FileOutputCommitter (FileOutputCommitter.java:commitTask(124)) - Saved output of task 'attempt_201103040947_0001_r_000000_0' to file:/home/liangly/Yunti1/trunk/hadoop-newapi/build/test/data/out
+2011-03-04 09:47:25,115 INFO  mapred.TaskRunner (Task.java:sendDone(755)) - Task 'attempt_201103040947_0001_r_000000_0' done.

@@ -1,0 +1,27 @@
+Tools for archive
+
+Usage:
+1. Modify build.xml
+  <target name="archive-jar" depends="compile-core" description="build fairscheduler jar">
+     <subant target="jar">
+        <property name="version" value="${version}"/>
+        <fileset file="${archivecluster.dir}/build.xml"/>
+      </subant>      
+  </target>
+
+  <target name="road2cloud" depends="compile-contrib,jar,tools-jar,examples,scheduler-jar,archive-jar">
+
+
+2. Modify bin/hadoop
+(1) modify classpath
+  if [ -d "$HADOOP_HOME/build/contrib/archivecluster/classes" ]; then
+     CLASSPATH=${CLASSPATH}:$HADOOP_HOME/build/contrib/archivecluster/classes
+  fi
+(2) modify CLASS
+   elif [ "$COMMAND" = "fs" ] ; then
+     CLASS=org.apache.hadoop.fs.YuntiFsShell
+     HADOOP_OPTS="$HADOOP_OPTS $HADOOP_CLIENT_OPTS"
+   elif [ "$COMMAND" = "dfs" ] ; then
+     CLASS=org.apache.hadoop.fs.YuntiFsShell
+     HADOOP_OPTS="$HADOOP_OPTS $HADOOP_CLIENT_OPTS"
+
