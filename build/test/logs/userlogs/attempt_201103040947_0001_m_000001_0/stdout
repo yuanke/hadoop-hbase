@@ -1,9 +1,0 @@
-2011-03-04 09:47:16,850 WARN  conf.Configuration (Configuration.java:loadResource(1055)) - /home/liangly/Yunti1/trunk/hadoop-newapi/build/test/mapred/local/0_0/taskTracker/jobcache/job_201103040947_0001/attempt_201103040947_0001_m_000001_0/job.xml:a attempt to override final parameter: hadoop.tmp.dir;  Ignoring.
-2011-03-04 09:47:16,914 INFO  jvm.JvmMetrics (JvmMetrics.java:init(71)) - Initializing JVM Metrics with processName=MAP, sessionId=
-2011-03-04 09:47:16,968 INFO  mapred.MapTask (MapTask.java:<init>(738)) - io.sort.mb = 100
-2011-03-04 09:47:17,066 INFO  mapred.MapTask (MapTask.java:<init>(750)) - data buffer = 79691776/99614720
-2011-03-04 09:47:17,066 INFO  mapred.MapTask (MapTask.java:<init>(751)) - record buffer = 262144/327680
-2011-03-04 09:47:17,090 INFO  mapred.MapTask (MapTask.java:flush(1077)) - Starting flush of map output
-2011-03-04 09:47:17,181 INFO  mapred.MapTask (MapTask.java:sortAndSpill(1259)) - Finished spill 0
-2011-03-04 09:47:17,185 INFO  mapred.TaskRunner (Task.java:done(668)) - Task:attempt_201103040947_0001_m_000001_0 is done. And is in the process of commiting
-2011-03-04 09:47:17,194 INFO  mapred.TaskRunner (Task.java:sendDone(755)) - Task 'attempt_201103040947_0001_m_000001_0' done.
